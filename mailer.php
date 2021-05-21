@@ -8,15 +8,15 @@
 
     // Kontroluje data popř. přesměruje na chybovou adresu
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: https://www.dopln.cz/index.html?success=-1#form");
+        header("Location: https://kastin.vercel.app/index.html?success=-1#form");
         exit;
     }
 
     // Nastavte si email, nakterý chcete, aby se vyplněný formulář odeslal - jakýkoli váš email
-    $recipient = "tvuj email, kam se má formulář zaslat";
+    $recipient = "rikri5@seznam.cz";
 
     // Nastavte předmět odeslaného emailu
-    $subject = "Máte nový kontakt od: $name";
+    $subject = "Máte nový vzkaz od: $name";
 
     // Obsah emailu, který se vám odešle
     $email_content = "Jméno: $name\n";
@@ -30,6 +30,6 @@
     mail($recipient, $subject, $email_content, $email_headers);
     
     // Přesměrování na stránku, pokud vše proběhlo v pořádku
-    header("Location:https://www.dopln.cz/index.html?success=1#form");
+    header("Location: https://kastin.vercel.app/index.html?success=1#form");
 
 ?>
