@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kastin to je česká ruční výroba peněženek, kabelek, kabelkobatohů a jiných doplňků."
+    />
+    <meta
+      name="keywords"
+      content="peněženky, kabelky, ruční výroba, Kastin, české výrobky, kabelka Anetka, kabelkobatohy, výroba na zakázku"
+    />
+    <meta name="author" content="Kastin" />
+
+    <!-- obecné openGraph meta tada pro sociální sítě (existuje i pro twitter viz video)-->
+    <meta property="og:title" content="Kastin | kabelky, peněženky, batohy" />
+    <meta
+      property="og:description"
+      content="Ruční výroba produktů z designových látek a koženky"
+    />
+    <meta property="og:type" content="hand-made" />
+    <meta
+      property="og:image"
+      content="https://kristynriho.github.io/Kastin/img/kabelky.jpg"
+    />
+    <!-- zde adresy, kde je web publikován-->
+    <meta property="og:url" content="https://kristynriho.github.io/Kastin/" />
+    <meta property="og:locale" content="cs_CZ" />
+
+    <title>
+      {{ title }}
+    </title>
+    <link rel="shortcut icon" href="/img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/style-slide.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+     <script
+      src="https://kit.fontawesome.com/e5df4230c0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--úvodní fotos + logo-->
+    <header class="intro">
+      <!-- logo -->
+      <div class="intro__item intro__item--img">
+        <a href="/"
+          ><img class="logo" id="logo" src="/img/logo.png" alt="logo Kastin"
+        /></a>
+      </div>
+
+      <!-- navigation -->
+      <nav class="intro__item intro__item--text">
+        <ul class="menu">
+          <li class="menu__item"><a href="/#aktuality">Aktuality</a></li>
+          <li class="menu__item"><a href="/#vyrobky">Výrobky</a></li>
+          <li class="menu__item">
+            <a href="/fotogalerie/">Fotogalerie</a>
+          </li>
+          <li class="menu__item"><a href="/recenze/">Recenze</a></li>
+          <li class="menu__item"><a href="/omne/">Můj příběh</a></li>
+          <li class="menu__item"><a href="/kontakt/">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+{{ content | safe }}
+      </main>
+    <!-- back to top -->
+    <div class="link-top">
+      <a class="link-top__a" href="/#logo"
+        ><img src="/img/sipka.png" alt="top"
+      /></a>
+    </div>
+
+    <footer>
+      <p>© 2021, Kastin</p>
+      <a href="/obchodni-podminky/">Obchodní podmínky</a>
+    </footer>
+  </body>
+</html>
